@@ -14,7 +14,6 @@
                 extend: {
                     fontFamily: {
                         sans: ['Noto Sans KR', 'Pretendard', 'sans-serif'],
-                        title: ['GmarketSans', 'sans-serif'],
                     },
                     colors: {
                         primary: '#009CE4',
@@ -27,12 +26,6 @@
         }
     </script>
     <style>
-        @font-face {
-            font-family: 'GmarketSans';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-            font-weight: 700;
-            font-style: normal;
-        }
         body { font-family: 'Noto Sans KR', 'Pretendard', sans-serif; }
         .card-shadow { box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03); }
         .badge-border { border: 1.5px solid #e2e8f0; }
@@ -40,11 +33,11 @@
 </head>
 <body class="min-h-screen bg-gradient-to-br from-[#e6f2fc] via-[#f0f8ff] to-[#e0f0fb] text-gray-800 relative overflow-x-hidden">
 
-    <!-- 배경 장식 효과 (React 원본과 동일) -->
+    <!-- 배경 장식 효과 -->
     <div class="absolute top-[-10%] left-[-5%] w-[400px] h-[400px] bg-blue-300 rounded-full mix-blend-multiply blur-[100px] opacity-40 pointer-events-none"></div>
     <div class="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-sky-200 rounded-full mix-blend-multiply blur-[120px] opacity-40 pointer-events-none"></div>
 
-    <!-- ★ 로고 이미지 + AI Design Lab 텍스트 (React 원본과 동일 구조) ★ -->
+    <!-- ★ 로고 이미지 + AI Design Lab 텍스트 (React 원본과 동일) ★ -->
     <div class="absolute top-2 left-8 md:top-3 md:left-12 z-[100] flex items-center">
         <img
             src="logo.png"
@@ -58,14 +51,14 @@
 
     <!-- 메인 콘텐츠 -->
     <div class="max-w-5xl mx-auto p-4 md:p-8 pt-4 md:pt-12 z-10 relative">
-        <!-- Header -->
+        <!-- Header (Noto Sans KR 900 = font-black) -->
         <header class="mb-20 text-center mt-40 md:mt-44">
-            <h1 class="font-title text-[2.8rem] md:text-[3.8rem] font-bold text-titleDark mb-4 tracking-tighter leading-tight">
+            <h1 class="text-[2.6rem] md:text-[3.5rem] font-black text-[#1a2744] mb-5 tracking-tight leading-tight">
                 ACE 활동 연간 로드맵
             </h1>
-            <div class="text-slate-500 max-w-2xl mx-auto text-sm md:text-lg font-medium">
-                <p>전문 역량 확보와 사내 지식 공유를 위한 주요 일정</p>
-            </div>
+            <p class="text-[#6b8299] text-[15px] md:text-[17px] font-medium tracking-tight">
+                ACE 멤버만이 누릴 수 있는 특별한 혜택
+            </p>
         </header>
 
         <!-- Desktop Timeline (Horizontal) -->
@@ -80,9 +73,9 @@
         <!-- Mobile/Tablet Timeline (Vertical) -->
         <div id="mobile-timeline" class="lg:hidden space-y-5 mb-12"></div>
 
-        <!-- Bottom Badge -->
+        <!-- Bottom Badge (Noto Sans KR Bold) -->
         <div class="flex justify-center mt-12 pb-16">
-            <div class="bg-white px-8 py-4 rounded-full card-shadow badge-border flex items-center gap-2 text-[15px] font-title font-bold text-slate-700">
+            <div class="bg-white px-8 py-4 rounded-full card-shadow badge-border flex items-center gap-2 text-[15px] font-bold text-slate-700">
                 🚀 <span class="mx-1">ACE 활동을 진심으로 축하드립니다.</span> 🚀
             </div>
         </div>

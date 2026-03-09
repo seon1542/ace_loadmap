@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACE 활동 연간 로드맵</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACE 활동 연간 로드맵</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -24,63 +24,63 @@
                 }
             }
         }
-    </script>
-    <style>
+</script>
+<style>
         body { font-family: 'Noto Sans KR', 'Pretendard', sans-serif; }
         .card-shadow { box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03); }
         .badge-border { border: 1.5px solid #e2e8f0; }
-    </style>
+</style>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-[#e6f2fc] via-[#f0f8ff] to-[#e0f0fb] text-gray-800 relative overflow-x-hidden">
-
+ 
     <!-- 배경 장식 효과 -->
-    <div class="absolute top-[-10%] left-[-5%] w-[400px] h-[400px] bg-blue-300 rounded-full mix-blend-multiply blur-[100px] opacity-40 pointer-events-none"></div>
-    <div class="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-sky-200 rounded-full mix-blend-multiply blur-[120px] opacity-40 pointer-events-none"></div>
-
+<div class="absolute top-[-10%] left-[-5%] w-[400px] h-[400px] bg-blue-300 rounded-full mix-blend-multiply blur-[100px] opacity-40 pointer-events-none"></div>
+<div class="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-sky-200 rounded-full mix-blend-multiply blur-[120px] opacity-40 pointer-events-none"></div>
+ 
     <!-- ★ 로고 이미지 + AI Design Lab 텍스트 ★ -->
-    <div class="absolute top-2 left-8 md:top-3 md:left-12 z-[100] flex items-center">
-        <img
+<div class="absolute top-2 left-8 md:top-3 md:left-12 z-[100] flex items-center">
+<img
             src="logo.png"
             alt="Logo"
             class="w-48 h-48 md:w-56 md:h-56 object-contain drop-shadow-sm"
         />
-        <span class="text-2xl md:text-3xl font-medium text-[#2d3748] tracking-tight -ml-14">
+<span class="text-2xl md:text-3xl font-medium text-[#2d3748] tracking-tight -ml-14">
             AI Design Lab
-        </span>
-    </div>
-
+</span>
+</div>
+ 
     <!-- 메인 콘텐츠 -->
-    <div class="max-w-5xl mx-auto p-4 md:p-8 pt-4 md:pt-12 z-10 relative">
-        <!-- Header -->
-        <header class="mb-20 text-center mt-40 md:mt-44">
-            <h1 class="text-[2.6rem] md:text-[3.5rem] font-black text-[#1a2744] mb-5 tracking-tight leading-tight">
+<div class="max-w-5xl mx-auto p-4 md:p-8 pt-4 md:pt-12 z-10 relative">
+<!-- Header -->
+<header class="mb-20 text-center mt-40 md:mt-44">
+<h1 class="text-[2.6rem] md:text-[3.5rem] font-black text-[#1a2744] mb-5 tracking-tight leading-tight">
                 ACE 활동 연간 로드맵
-            </h1>
-            <p class="text-[#6b8299] text-[15px] md:text-[17px] font-medium tracking-tight">
+</h1>
+<p class="text-[#6b8299] text-[15px] md:text-[17px] font-medium tracking-tight">
                 ACE 멤버만이 누릴 수 있는 특별한 혜택
-            </p>
-        </header>
-
+</p>
+</header>
+ 
         <!-- Desktop Timeline (Horizontal) -->
-        <div class="hidden lg:block relative mb-20 px-8">
-            <div class="absolute left-12 right-12 top-7 h-[4px] bg-white shadow-[0_2px_10px_rgba(0,156,228,0.12)] rounded-full -translate-y-1/2 z-0"></div>
-            <div id="desktop-timeline" class="relative flex justify-between items-start h-36 z-10"></div>
-        </div>
-
+<div class="hidden lg:block relative mb-20 px-8">
+<div class="absolute left-12 right-12 top-7 h-[4px] bg-white shadow-[0_2px_10px_rgba(0,156,228,0.12)] rounded-full -translate-y-1/2 z-0"></div>
+<div id="desktop-timeline" class="relative flex justify-between items-start h-36 z-10"></div>
+</div>
+ 
         <!-- Detailed Info Section (Desktop Card) -->
-        <div id="detail-section" class="hidden lg:block mb-16 transition-all duration-500"></div>
-
+<div id="detail-section" class="hidden lg:block mb-16 transition-all duration-500"></div>
+ 
         <!-- Mobile/Tablet Timeline (Vertical) -->
-        <div id="mobile-timeline" class="lg:hidden space-y-5 mb-12"></div>
-
+<div id="mobile-timeline" class="lg:hidden space-y-5 mb-12"></div>
+ 
         <!-- Bottom Badge -->
-        <div class="flex justify-center mt-12 pb-16">
-            <div class="bg-white px-8 py-4 rounded-full card-shadow badge-border flex items-center gap-2 text-[15px] font-bold text-slate-700">
+<div class="flex justify-center mt-12 pb-16">
+<div class="bg-white px-8 py-4 rounded-full card-shadow badge-border flex items-center gap-2 text-[15px] font-bold text-slate-700">
                 🚀 <span class="mx-1">ACE 활동을 진심으로 축하드립니다.</span> 🚀
-            </div>
-        </div>
-    </div>
-
+</div>
+</div>
+</div>
+ 
     <script>
         const roadmapData = [
             {
@@ -96,15 +96,15 @@
                 title:"부트캠프",
                 month:"3월",
                 description:"기초 역량 강화를 위한\n전문 외부 교육을 진행합니다.",
-                details:["각 본부 단위조직별 AI Needs 파악","기초 역량 강화를 위한 외부 교육","온/오프라인 AI 강의 제공"],
+                details:["AI링커 선발 및 링커 웨비나 진행","각 본부 단위조직별 AI Needs 파악","전문 교육(온/오프라인 강의)"],
                 icon:"graduation-cap"
             },
             {
                 id:3,
                 title:"월별 활동 (상반기)",
                 month:"4월 ~ 6월",
-                description:"월별 ACE 과제를 수행하며\nAI USE CASE를 전파하며 전사 AI 사용 문화를 활성화시킵니다.",
-                details:["월별 ACE 과제 수행","도와줘요 ACE를 통한 현장 AI 활성화 지원","AI링커 선발 및 링커 웨비나 진행","사내 AI USE CASE 발굴/공유 및 네트워킹","명사 특강 4월 진행"],
+                description:"월별 ACE 과제를 수행하며\nAI USE CASE를 전파하고 전사 AI 활용 문화를 활성화시킵니다.",
+                details:["월별 AI USE CASE 발굴/공유","명사 특강(4월 예정)","도와줘요 ACE를 통한 현장 AI 활성화 지원"],
                 icon:"calendar-check"
             },
             {
@@ -120,104 +120,104 @@
                 title:"월별 활동 (하반기)",
                 month:"8월 ~ 10월",
                 description:"월별 ACE 과제를 진행하고 성과 확산을 위한\n사내 세미나를 개최합니다.",
-                details:["월별 ACE 과제 진행","도와줘요 ACE를 통한 현장 AI 활성화 지원","사내 AI USE CASE 발굴/공유","성과 확산을 위한 세미나 개최"],
+                details:["월별 AI USE CASE 발굴/공유","도와줘요 ACE를 통한 현장 AI 활성화 지원","성과 확산을 위한 세미나 개최"],
                 icon:"rocket"
             },
             {
                 id:6,
                 title:"활동 결산",
                 month:"11월 ~ 12월",
-                description:"최종 활동 보고회를 통해\n우수 활동자는 포상 받습니다.",
+                description:"최종 활동 보고회를 통해\n우수 활동자에게는 포상이 제공됩니다.",
                 details:["최종 활동 보고회","우수 활동자 포상 및 피드백"],
                 icon:"award"
             }
         ];
-
+ 
         let activeId = 1;
-
+ 
         function render() {
             const desktopTimeline = document.getElementById('desktop-timeline');
             desktopTimeline.innerHTML = roadmapData.map(step => {
                 const isActive = activeId === step.id;
                 return `
-                <div class="flex flex-col items-center group cursor-pointer relative" style="width:16%" onclick="setActive(${step.id})">
-                    <div class="w-14 h-14 mb-5 rounded-full flex items-center justify-center transition-all duration-300 z-10
+<div class="flex flex-col items-center group cursor-pointer relative" style="width:16%" onclick="setActive(${step.id})">
+<div class="w-14 h-14 mb-5 rounded-full flex items-center justify-center transition-all duration-300 z-10
                         ${isActive
                             ? 'bg-primary ring-4 ring-white shadow-[0_0_0_8px_rgba(0,156,228,0.2)] text-white scale-110'
                             : 'bg-white border-[3px] border-slate-200 text-slate-400 hover:border-primary hover:text-primary'}">
-                        <i data-lucide="${step.icon}" class="w-6 h-6"></i>
-                    </div>
-                    <div class="text-center transition-all duration-300 ${isActive ? 'transform -translate-y-1' : ''}">
-                        <div class="text-sm font-bold mb-1.5 ${isActive ? 'text-primary' : 'text-slate-400'}">${step.month}</div>
-                        <h3 class="font-bold text-[15px] ${isActive ? 'text-slate-900' : 'text-slate-500'}">${step.title}</h3>
-                    </div>
-                </div>`;
+<i data-lucide="${step.icon}" class="w-6 h-6"></i>
+</div>
+<div class="text-center transition-all duration-300 ${isActive ? 'transform -translate-y-1' : ''}">
+<div class="text-sm font-bold mb-1.5 ${isActive ? 'text-primary' : 'text-slate-400'}">${step.month}</div>
+<h3 class="font-bold text-[15px] ${isActive ? 'text-slate-900' : 'text-slate-500'}">${step.title}</h3>
+</div>
+</div>`;
             }).join('');
-
+ 
             const mobileTimeline = document.getElementById('mobile-timeline');
             mobileTimeline.innerHTML = roadmapData.map(step => {
                 const isActive = activeId === step.id;
                 return `
-                <div onclick="setActive(${step.id})" class="cursor-pointer bg-white rounded-2xl p-6 transition-all duration-300
+<div onclick="setActive(${step.id})" class="cursor-pointer bg-white rounded-2xl p-6 transition-all duration-300
                     ${isActive ? 'border-2 border-primary shadow-md' : 'border border-slate-100 shadow-sm'}">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white ${isActive ? 'bg-primary' : 'bg-slate-300'}">
-                            <i data-lucide="${step.icon}" class="w-6 h-6"></i>
-                        </div>
-                        <div>
-                            <span class="text-[11px] font-bold text-primary tracking-wider uppercase">STEP 0${step.id}</span>
-                            <h3 class="text-lg font-bold text-slate-800 leading-tight">${step.title} <span class="text-sm font-normal text-slate-400 ml-1">(${step.month})</span></h3>
-                        </div>
-                    </div>
-                    <p class="text-slate-500 text-sm mb-4 whitespace-pre-line leading-relaxed">${step.description}</p>
-                    <div class="space-y-2">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-xl flex items-center justify-center text-white ${isActive ? 'bg-primary' : 'bg-slate-300'}">
+<i data-lucide="${step.icon}" class="w-6 h-6"></i>
+</div>
+<div>
+<span class="text-[11px] font-bold text-primary tracking-wider uppercase">STEP 0${step.id}</span>
+<h3 class="text-lg font-bold text-slate-800 leading-tight">${step.title} <span class="text-sm font-normal text-slate-400 ml-1">(${step.month})</span></h3>
+</div>
+</div>
+<p class="text-slate-500 text-sm mb-4 whitespace-pre-line leading-relaxed">${step.description}</p>
+<div class="space-y-2">
                         ${step.details.map(d => `
-                            <div class="flex items-center gap-2 text-[13px] text-slate-600 bg-slate-50 px-3 py-2.5 rounded-lg">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 text-primary"></i>
+<div class="flex items-center gap-2 text-[13px] text-slate-600 bg-slate-50 px-3 py-2.5 rounded-lg">
+<i data-lucide="check-circle-2" class="w-4 h-4 text-primary"></i>
                                 ${d}
-                            </div>`).join('')}
-                    </div>
-                </div>`;
+</div>`).join('')}
+</div>
+</div>`;
             }).join('');
-
+ 
             const detailSection = document.getElementById('detail-section');
             if (activeId) {
                 const step = roadmapData.find(s => s.id === activeId);
                 detailSection.innerHTML = `
-                <div class="bg-white rounded-[28px] p-12 card-shadow border border-white mx-auto max-w-4xl transform transition-all duration-500 opacity-100 translate-y-0">
-                    <div class="flex items-start gap-8">
-                        <div class="shrink-0 w-20 h-20 rounded-[1.25rem] flex items-center justify-center bg-primary text-white shadow-sm">
-                            <i data-lucide="${step.icon}" class="w-10 h-10"></i>
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center gap-2 mb-3">
-                                <span class="text-sm font-extrabold text-primary tracking-widest uppercase">STEP 0${step.id} • ${step.month}</span>
-                            </div>
-                            <h2 class="text-[1.75rem] font-bold text-slate-900 mb-4">${step.title}</h2>
-                            <p class="text-slate-500 text-[17px] leading-relaxed mb-8 whitespace-pre-line">${step.description}</p>
-                            <div class="flex flex-col gap-3">
+<div class="bg-white rounded-[28px] p-12 card-shadow border border-white mx-auto max-w-4xl transform transition-all duration-500 opacity-100 translate-y-0">
+<div class="flex items-start gap-8">
+<div class="shrink-0 w-20 h-20 rounded-[1.25rem] flex items-center justify-center bg-primary text-white shadow-sm">
+<i data-lucide="${step.icon}" class="w-10 h-10"></i>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-sm font-extrabold text-primary tracking-widest uppercase">STEP 0${step.id} • ${step.month}</span>
+</div>
+<h2 class="text-[1.75rem] font-bold text-slate-900 mb-4">${step.title}</h2>
+<p class="text-slate-500 text-[17px] leading-relaxed mb-8 whitespace-pre-line">${step.description}</p>
+<div class="flex flex-col gap-3">
                                 ${step.details.map(d => `
-                                    <div class="flex items-center gap-3 text-[15px] text-slate-600">
-                                        <div class="w-6 h-6 rounded-full bg-primaryLight flex items-center justify-center shrink-0">
-                                            <i data-lucide="check" class="w-4 h-4 text-primary stroke-[3]"></i>
-                                        </div>
-                                        <span class="font-medium">${d}</span>
-                                    </div>`).join('')}
-                            </div>
-                        </div>
-                    </div>
-                </div>`;
+<div class="flex items-center gap-3 text-[15px] text-slate-600">
+<div class="w-6 h-6 rounded-full bg-primaryLight flex items-center justify-center shrink-0">
+<i data-lucide="check" class="w-4 h-4 text-primary stroke-[3]"></i>
+</div>
+<span class="font-medium">${d}</span>
+</div>`).join('')}
+</div>
+</div>
+</div>
+</div>`;
             }
-
+ 
             lucide.createIcons();
         }
-
+ 
         function setActive(id) {
             activeId = id;
             render();
         }
-
+ 
         window.onload = render;
-    </script>
+</script>
 </body>
 </html>
